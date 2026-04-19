@@ -31,3 +31,27 @@ The project also includes a basic Linux hardening script and PKI command example
 - PKI setup
 - Incident report
 - OT and SRE insight
+
+## Traffic Analysis
+
+### TLS Traffic Analysis
+
+![TLS Handshake](evidence/screenshots/tls_successful_handshake.png)
+
+A packet capture was performed using Wireshark to analyze network traffic. The capture shows a successful TLS 1.3 handshake between a local host and external servers.
+
+The following sequence was observed:
+
+- Client Hello – Initiates the secure connection
+- Server Hello – Server responds with supported encryption parameters
+- Certificate – Server presents its certificate for authentication
+- Change Cipher Spec – Encryption parameters are applied
+- Application Data – Encrypted data transmission begins
+
+This sequence confirms that a secure communication channel was successfully established.
+
+Additionally, QUIC protocol traffic was observed, which is commonly used in modern web applications (e.g., HTTP/3). This indicates normal network behavior and active encrypted communication.
+
+### Analyst Observation
+
+The traffic captured represents normal, healthy encrypted communication. While the contents of the data cannot be inspected due to encryption, analysis of the handshake process and traffic patterns confirms that no anomalies or failures occurred during this session.
