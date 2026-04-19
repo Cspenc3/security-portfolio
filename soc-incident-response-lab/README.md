@@ -34,7 +34,7 @@ The project also includes a basic Linux hardening script and PKI command example
 
 ## Traffic Analysis
 
-### TLS Traffic Analysis
+### TLS Traffic Analysis (Normal Behavior)
 
 ![TLS Handshake](evidence/screenshots/tls_successful_handshake.png)
 
@@ -48,10 +48,27 @@ The following sequence was observed:
 - Change Cipher Spec – Encryption parameters are applied
 - Application Data – Encrypted data transmission begins
 
-This sequence confirms that a secure communication channel was successfully established.
+This confirms that a secure communication channel was successfully established.
 
-Additionally, QUIC protocol traffic was observed, which is commonly used in modern web applications (e.g., HTTP/3). This indicates normal network behavior and active encrypted communication.
+Additionally, QUIC protocol traffic was observed, which is commonly used in modern web applications (e.g., HTTP/3), indicating normal encrypted communication behavior.
 
-### Analyst Observation
+### DNS Failure Analysis (Abnormal Behavior)
 
-The traffic captured represents normal, healthy encrypted communication. While the contents of the data cannot be inspected due to encryption, analysis of the handshake process and traffic patterns confirms that no anomalies or failures occurred during this session.
+![DNS Failure](evidence/screenshots/dns_failed_lookup.png)
+
+During analysis, repeated DNS queries were observed for a non-existent domain (`fake-warehouse-sync-test-123.com`). The responses consistently returned "No such name," indicating that the domain could not be resolved.
+
+This behavior may indicate:
+
+- Misconfigured application or service endpoint
+- Automated system attempting to reach an invalid resource
+- Potential beaconing behavior from a compromised system
+- Network or configuration issues causing repeated retry attempts
+
+### Analyst Comparison
+
+The TLS traffic represents normal, expected encrypted communication, while the DNS failures demonstrate abnormal behavior that could require further investigation.
+
+In a SOC environment, distinguishing between normal activity and suspicious patterns is critical. While repeated DNS failures may appear malicious, similar patterns can also result from system misconfiguration or operational issues.
+
+This highlights the importance of analyzing both network behavior and system context before determining whether activity is truly malicious.
