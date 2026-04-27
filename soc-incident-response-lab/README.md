@@ -70,6 +70,35 @@ TLS traffic represents expected behavior, while DNS failures demonstrate abnorma
 
 ---
 
+## Simulated SIEM Correlation
+
+Although a full SIEM platform was not deployed, this project reflects how a SIEM would correlate multiple data sources.
+
+### Data Sources
+- Network traffic (Wireshark)
+- DNS queries
+- Linux authentication logs (`/var/log/auth.log`)
+- System services and host state
+
+### Correlation Logic
+The following events were analyzed together:
+
+1. Repeated DNS failures to a non-existent domain
+2. Normal TLS traffic occurring at the same time
+3. Host-level logs showing no unauthorized access
+
+### Analyst Insight
+
+In a SIEM environment, these events would be correlated to determine whether the behavior is:
+
+- Malicious (e.g., beaconing or command-and-control)
+- Misconfiguration (invalid service endpoint or retry loop)
+- Operational (temporary failure or connectivity issue)
+
+Based on the combined evidence, the behavior is most consistent with misconfiguration or automated retry activity rather than confirmed malicious behavior.
+
+---
+
 ## Response Actions (Post-Investigation)
 
 ### Linux System Hardening Script
@@ -99,6 +128,7 @@ This project demonstrates a full SOC workflow:
 
 - Detection (Wireshark)
 - Analysis (TLS vs DNS)
+- Correlation (SIEM-style reasoning)
 - Response (Linux system review)
 
 It highlights the importance of correlating network and system data during investigations.
