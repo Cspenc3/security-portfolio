@@ -72,3 +72,29 @@ The TLS traffic represents normal, expected encrypted communication, while the D
 In a SOC environment, distinguishing between normal activity and suspicious patterns is critical. While repeated DNS failures may appear malicious, similar patterns can also result from system misconfiguration or operational issues.
 
 This highlights the importance of analyzing both network behavior and system context before determining whether activity is truly malicious.
+
+## Response Actions (Post-Investigation)
+
+### Linux System Hardening Script
+
+![Script Code](evidence/screenshots/linux_script_code.png)
+![Script Execution](evidence/screenshots/linux_script_execution.png)
+![Script Output](evidence/screenshots/linux_script_output.png)
+
+Following the identification of abnormal network behavior, a basic Linux system review and hardening script was executed to simulate post-investigation response actions.
+
+The script performs the following checks:
+
+- Updates package lists to ensure system package information is current
+- Lists active system services for review
+- Checks firewall status using UFW
+- Reviews directory permissions on `/home`
+- Collects recent authentication log entries
+
+### Analyst Insight
+
+The script output provides visibility into host-level activity, including running services, firewall status, directory permissions, and recent authentication events. This type of information helps determine whether abnormal network behavior may be related to system configuration, legitimate services, or potential security concerns.
+
+By combining network traffic analysis with host-level review, this project demonstrates a practical SOC workflow that includes detection, analysis, and response.
+
+This also reinforces the importance of correlating network behavior with endpoint context before deciding whether activity is malicious, misconfigured, or caused by a reliability issue.
