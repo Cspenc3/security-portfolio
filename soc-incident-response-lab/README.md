@@ -11,6 +11,28 @@ This project simulates a SOC-style investigation of suspicious or abnormal netwo
 
 ---
 
+## Network Topology Context
+
+![Network Topology](evidence/screenshots/network_topology.png)
+
+The environment is segmented into two networks:
+
+- **Admin Network (192.168.12.0/24)** – Static IP addressing, controlled devices
+- **Student Network (192.168.20.0/24)** – DHCP-based addressing, dynamic endpoints
+
+Both networks connect through a central router which provides access to external resources.
+
+### Analyst Insight
+
+Network segmentation provides important context when analyzing abnormal behavior. DNS failures observed during the investigation could originate from different trust zones:
+
+- From the **student network**, repeated failures may indicate misconfigured applications or automated retry behavior
+- From the **admin network**, similar behavior would require deeper investigation due to higher trust level systems
+
+Understanding the network layout improves accuracy when determining whether behavior is malicious or operational.
+
+---
+
 ## Objectives
 - Capture and analyze network traffic in Wireshark
 - Identify normal TLS behavior and compare it to failed or unstable communication
