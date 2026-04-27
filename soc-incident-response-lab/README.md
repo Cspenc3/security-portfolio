@@ -99,6 +99,36 @@ Based on the combined evidence, the behavior is most consistent with misconfigur
 
 ---
 
+## OT & SRE Perspective
+
+### Systems Thinking Approach
+
+This project is also viewed through an Operational Technology (OT) and Site Reliability Engineering (SRE) lens. The repeated DNS failures could represent more than a security concern; they may also reflect how systems behave when a dependency is unavailable.
+
+The same event can be interpreted from multiple perspectives:
+
+- **SOC perspective:** potential beaconing or suspicious activity
+- **OT perspective:** device or system unable to reach a configured endpoint
+- **SRE perspective:** retry behavior caused by a failed dependency or service path
+
+### Failure vs Threat Analysis
+
+Instead of immediately classifying the behavior as malicious, the analysis considers how systems behave under failure conditions:
+
+- Applications may retry failed connections
+- Services may repeatedly attempt DNS resolution
+- Network or configuration issues can create patterns that resemble threats
+
+This approach supports better triage and reduces false positives.
+
+### Real-World Relevance
+
+In OT environments, similar patterns can occur when devices lose connectivity to central systems, experience configuration mismatches, or are impacted by segmentation and communication path issues.
+
+Understanding these behaviors is important because operational failures can appear suspicious at the network level even when the root cause is reliability or configuration related.
+
+---
+
 ## Response Actions (Post-Investigation)
 
 ### Linux System Hardening Script
@@ -129,6 +159,7 @@ This project demonstrates a full SOC workflow:
 - Detection (Wireshark)
 - Analysis (TLS vs DNS)
 - Correlation (SIEM-style reasoning)
+- OT/SRE thinking (failure vs threat analysis)
 - Response (Linux system review)
 
 It highlights the importance of correlating network and system data during investigations.
