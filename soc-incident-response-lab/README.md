@@ -3,7 +3,11 @@
 ## Overview
 This project simulates a SOC-style investigation of suspicious or abnormal network activity using Wireshark. The goal is to analyze traffic patterns, understand how secure communications appear in packet captures, and document how a security analyst could respond to unusual behavior.
 
-Related Playbook: [Cybersecurity Playbook (v1)](../Playbooks/cybersecurity-playbook.md)
+---
+
+## 🔷 Project Navigation
+- 📄 Incident Report: [DNS Anomaly Investigation](report/incident_report.md)
+- 📘 Playbook: [Cybersecurity Playbook (v1)](../Playbooks/cybersecurity-playbook.md)
 
 ---
 
