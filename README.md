@@ -6,10 +6,15 @@ This portfolio highlights hands-on cybersecurity work focused on Security Operat
 My current path is centered on breaking into SOC while building on real-world operational troubleshooting experience and growing into OT security and reliability-focused roles.
 
 ## Current Focus
-- SOC investigation and incident response labs
+- SOC investigation and network triage labs
 - OT-related troubleshooting and security interpretation
 - SRE-style thinking around system behavior, failures, and recovery
 - Continuous learning through books, labs, and hands-on practice
+
+## Featured Project
+
+### OT/IT Boundary Triage Lab
+- [ot-it-boundary-triage-lab](./ot-it-boundary-triage-lab) – Wireshark-based triage lab comparing C2-style beacon timing against benign OT/IIoT retry behavior. This lab focuses on distinguishing suspicious network patterns from operational failures using packet evidence, blind analysis, ground truth review, and OT/SRE context.
 
 ## Featured Projects
 
@@ -32,6 +37,7 @@ This includes areas such as:
 - Certificate-related communication failures
 - Timeouts, retries, and behavior that may appear suspicious at the network level
 - Distinguishing reliability issues from true security incidents
+- Understanding when repeated traffic is malicious, operational, misconfigured, or unknown
 
 ## Continuous Learning
 Books and resources helping shape my approach:
