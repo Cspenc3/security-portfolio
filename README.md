@@ -12,7 +12,7 @@ My long-term focus is **secure industrial network and control-system architectur
 | --- | --- | --- |
 | **[SOC Incident Response Lab](./soc-incident-response-lab/README.md)** | Wireshark analysis, DNS investigation, TLS traffic review, Linux host checks, and incident reasoning | [Investigation report](./soc-incident-response-lab/report/incident_report.md), [screenshots](./soc-incident-response-lab/evidence/screenshots/), and [Linux review script](./soc-incident-response-lab/scripts/system_hardening.sh) |
 | **[Cybersecurity Response Playbook](./Playbooks/cybersecurity-playbook.md)** | Structured triage, evidence review, and response documentation | Written playbook connected to the SOC lab |
-| **[Network Triage (CYB 210)](https://github.com/Cspenc3/network-triage-pcap)** | Networking fundamentals, traffic-analysis notes, and protocol study | Separate repository with study material and analysis notes |
+| **[Networking Fundamentals (CYB 210)](https://github.com/Cspenc3/network-triage-pcap)** | Subnetting and protocol study notes | Separate reference repository; packet-analysis exercises are not yet completed |
 | **[Network Security Sandbox (CYB 220)](https://github.com/Cspenc3/CYB220-project-one-sandbox)** | IP configuration, segmented network concepts, Windows policy configuration, and connectivity checks | Separate repository with lab write-up and screenshots |
 | **[Incident Response Workflows](https://github.com/Cspenc3/incident-response-workflows)** | Playbooks, incident handling concepts, and reusable response documentation | Separate repository |
 
