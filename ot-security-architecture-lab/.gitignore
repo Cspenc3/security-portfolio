@@ -1,0 +1,11 @@
+# Local-only data — do not publish secrets or unsanitized captures.
+.env
+.env.*
+*.key
+*.pem
+*credentials*
+*passwords*
+*secrets*
+local-logs/
+raw-captures/
+unsanitized/

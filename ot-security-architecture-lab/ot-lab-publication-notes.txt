@@ -1,0 +1,1 @@
+Internal project publication note: use ot-security-architecture-lab/README.md. All work must be performed against the isolated virtual lab only. This file is optional index metadata.

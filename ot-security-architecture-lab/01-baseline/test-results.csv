@@ -1,0 +1,9 @@
+test_id,date,component,test,expected,observed,status,evidence_file,remaining_question
+P1-01,2026-11-07,GRFICS,Docker inventory,Seven services displayed running,All seven displayed running,Observed; historical,Not yet uploaded,Repeat after next restart
+P1-02,2026-11-07,Simulation,Browser loads dashboard,Process visualization visible,Simulation dashboard and process displayed,Observed; historical,Not yet uploaded,Are values tied to controller?
+P1-03,2026-11-07,HMI,Windows HTTP before restart,HTTP reply,Connected but 0-byte timeout,Fail; historical,Not yet uploaded,Underlying cause unknown
+P1-04,2026-11-07,HMI,Internal Tomcat and EWS HTTP,HTTP response,HTTP 302 returned,Pass; historical,Not yet uploaded,Application path still needs full data check
+P1-05,2026-11-07,HMI,Windows browser after restart,HMI login/dashboard accessible,Login and operator graphic displayed,Pass; historical,Not yet uploaded,Repeatability not checked
+P1-06,Pending,HMI,Two process readings 60s apart,Measured timestamped values,Not performed,Not tested,TBD,Check live updates
+P1-07,Pending,PLC,Management page and runtime status,Current state identified,Not performed,Not tested,TBD,Check PLC-to-process relationship
+P1-08,Pending,Network,All container networks and intended flows,Seven-container mapping,Partial HMI/EWS only,Partial,TBD,Need full topology

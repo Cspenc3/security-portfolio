@@ -32,24 +32,13 @@ These directories are **project outlines, not completed hands-on implementations
 - [Cloud Security Project](./Cloud-Security-Project/README.md) — planned cloud-security exercises
 - [IR Case Studies](./IR-Case-Studies/) — initial Windows and Linux investigation outlines
 
-## Upcoming Flagship Project — OT Security Architecture Lab
+## Flagship Project — OT Security Architecture and Defense Lab
 
-**Status: Planning. No implementation or test results published yet.**
+**Status: Phase 1 in progress.** The virtual GRFICSv3 chemical-plant simulation, SCADA-LTS login/graphic, and selected HTTP paths were observed during a November 7, 2026 session. Live controller-to-process data exchange and packet capture are still to be verified.
 
-The planned lab will start virtually and later accommodate a physical PLC if suitable, authorized equipment becomes available.
+**[Explore Project 001: OT Security Architecture and Defense Lab](./ot-security-architecture-lab/README.md)** — one integrated industrial cybersecurity scenario with a project charter, certification objective mapping (GICSP / GRID / PMI-RMP), risk register, Phase 1 asset inventory and a documented HMI availability investigation.
 
-### Planned build stages
-
-1. **Architecture:** draw enterprise, operations, and control zones; define communications and security requirements.
-2. **Networking:** configure routing, segmentation, and firewall/ACL controls.
-3. **Industrial systems:** connect an OpenPLC simulation, FUXA HMI, and simulated process.
-4. **Security validation:** document permitted and denied connections and inspect industrial traffic with Wireshark.
-5. **Monitoring:** develop and test Splunk investigations using lab-generated data.
-6. **Future hardware:** evaluate authorized retired PLC integration without connecting to production networks.
-
-**Planned technologies:** Cisco Packet Tracer, GNS3, Docker/WSL2, OpenPLC, FUXA, GRFICS, Wireshark, and Splunk.
-
-The design process will draw on **NIST SP 800-82** and **ISA/IEC 62443** zones-and-conduits concepts. Implementation details and test evidence will be added only after validation.
+Future phases cover zone/conduit design, industrial packet analysis with Wireshark, control validation, detection/response and residual-risk reporting. Each claim will be supported by a reproducible test and lab-only evidence.
 
 ## Working Principles
 
