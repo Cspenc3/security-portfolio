@@ -1,46 +1,46 @@
-# Project 001 — OT Security Architecture and Defense Lab
+# Project 001 — OT Security Architecture & Defense Lab
 
-**Status: Phase 1 in progress (baseline verification).**  
-**Environment:** Isolated GRFICSv3 simulated chemical plant on Docker Desktop/WSL2.  
-**Owner:** Christopher Spencer. **Purpose:** Public, evidence-led engineering portfolio.
+**START HERE.** One simulated chemical plant. One engineering investigation. Multiple cybersecurity skill areas, each backed by evidence.
 
-## One scenario, one evidence trail
+**Status:** Phase 1 — baseline verification in progress. This is an isolated personal lab, not a production security assessment.
 
-Act as the defender assessing a virtual chemical plant. Establish normal operation; map assets, process dependencies and network zones; inspect actual communications; design and validate defensive controls; investigate a controlled security event; evaluate residual operational risk. This is a **simulation**, not a production assessment or claim of employment-based security operations.
+## Find the skills relevant to your role
 
-## Project roadmap and evidence
+| What you're evaluating | Go directly to | Evidence status |
+|---|---|---|
+| **OT / ICS security engineering** | [Plant baseline and HMI investigation](01-baseline/README.md) · [Architecture & trust boundaries](02-architecture/README.md) | Baseline partly observed; architecture work ahead |
+| **SOC analyst / incident response** | **[SOC investigation & detection](05-detection-response/README.md)** | A prior DNS investigation is documented; *chemical-plant detection* is planned |
+| **Network / security engineering** | [Network inventory](01-baseline/network-inventory.csv) · [Industrial traffic analysis](03-protocol-analysis/README.md) | Network memberships observed; protocol capture pending |
+| **Risk / project management** | [Charter](00-governance/project-charter.md) · [Risk register](00-governance/risk-register.csv) · [Decision log](00-governance/decision-log.md) | Living project documents published |
+| **Certification-aligned practical tests** | [GICSP, GRID & PMI-RMP objective-to-evidence map](00-governance/objectives-traceability.md) | Select objectives mapped; completion tracked honestly |
 
-| Phase | Question | Deliverable | Status |
-|---|---|---|---|
-| 1 — Baseline | What exists, works, and communicates? | Asset inventory, service checks, process readings, HMI recovery case | In progress |
-| 2 — Architecture | Where are trust boundaries and permitted paths? | Diagram, zone/conduit and data-flow matrix | Planned |
-| 3 — Protocol analysis | What is normal network behavior? | Sanitized PCAP, Wireshark findings and repeatable tests | Planned |
-| 4 — Security controls | What controls reduce risk without harming availability? | Change plan, rules/config, pre/post validation | Planned |
-| 5 — Detection and response | Can suspicious changes be detected, triaged and handled? | Lab-generated evidence, detection logic, incident report | Planned |
-| 6 — Risk and validation | What residual risk remains? | Risk treatment, test comparison and recovery analysis | Planned |
-| 7 — Final report | What did the engineering work prove? | Technical report and executive summary | Planned |
+## The single project story
 
-## Start here
+**Assess → Understand → Protect → Detect → Respond → Validate.**
 
-- [Project charter](00-governance/project-charter.md)
-- [Certification objective traceability](00-governance/objectives-traceability.md)
-- [Risk register](00-governance/risk-register.csv) and [decision log](00-governance/decision-log.md)
-- [Phase 1 guide — exactly when to record evidence](01-baseline/README.md)
-- [Asset inventory](01-baseline/asset-inventory.csv)
-- [Observed Nov. 7 baseline](01-baseline/observations-2026-11-07.md)
-- [HMI troubleshooting case](01-baseline/hmi-availability-case.md)
-- [Verification results](01-baseline/test-results.csv)
+1. **Baseline:** What assets exist? Is the HMI and process accessible? What is verified versus assumed?
+2. **Architecture:** What are the actual network zones, systems, routes, and intended communication paths?
+3. **Protocol evidence:** What packets are exchanged? Which industrial protocols and values are actually observed?
+4. **Defense:** What security control can be implemented without impairing process availability?
+5. **Detection & response:** What would distinguish a process/network failure from suspicious behavior?
+6. **Risk:** What changed, what remains uncertain, and what is the residual operational impact?
+7. **Report:** Can another engineer reproduce the result from the evidence?
 
-## Evidence standards
+Each phase is **a chapter in the same plant assessment**, not an unrelated portfolio project.
 
-Every claim must link to **a test, observation, timestamp, and supporting artifact**. Distinguish *observed*, *inferred*, and *not yet tested*. The process visualization and SCADA login worked on November 7, 2026, but dynamic PLC-process communication, packet analysis, and security-control performance are **not yet validated**. Screenshots mentioned in historical notes have not yet been uploaded to this repository.
+## Verified work so far
 
-Only isolated lab data may be published. Remove passwords, tokens, personal information, and any Walmart production or proprietary information. Never imply that a default lab credential is suitable for production. No connection to a live industrial controller or employer network is part of this project.
+On **November 7, 2026**, seven GRFICSv3 containers displayed as running; the chemical-plant visualization loaded; SCADA-LTS was accessed; and an HMI service-availability problem was systematically investigated and recovered by restarting the affected container.
 
-## Reference frameworks
+- [Read the documented HMI investigation](01-baseline/hmi-availability-case.md)
+- [Read the historical observations and displayed reactor readings](01-baseline/observations-2026-11-07.md)
+- [View current asset inventory](01-baseline/asset-inventory.csv)
+- [Follow Phase 1 tests and evidence capture instructions](01-baseline/README.md)
 
-The exercises are tagged to selected official [GIAC GICSP](https://www.giac.org/certifications/global-industrial-cyber-security-professional-gicsp) and [GIAC GRID](https://www.giac.org/certifications/response-industrial-defense-grid) objectives, alongside the [PMI-RMP exam outline](https://www.pmi.org/certifications/risk-management-rmp). They are *inspired by* the objectives; they do not represent GIAC endorsement, complete exam coverage, or certification.
+**Not yet proven:** Live PLC-to-process communications, industrial PCAP analysis, deployed security controls or chemical-plant detection rules. Historical screenshots were reviewed during the working session but have not yet been uploaded here.
 
-## Current next action
+## Evidence and integrity
 
-Restart the GRFICS Docker project, open the simulation and HMI, and complete the Phase 1 verification checklist with fresh dated evidence. Do not modify process controls or security configuration during baseline collection.
+Reports distinguish **observed facts**, **hypotheses**, **validated results**, and **planned tests**. Supporting SOC coursework is clearly marked as an *earlier separate training scenario*; it is not misrepresented as a chemical-plant security incident. Only isolated, sanitized lab evidence will be published. No employer systems, credentials or production data are used.
+
+**Document owner:** Christopher Spencer · CySA+ · Industrial maintenance / cybersecurity · B.S. Cybersecurity in progress
