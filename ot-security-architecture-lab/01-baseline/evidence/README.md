@@ -1,5 +1,7 @@
 # Phase 1 evidence directory
 
+An E03–E04 HMI comparison report has been published as [E03–E04 process observations](E03-E04-20261118-hmi-comparison.md). The actual E03 and E04 PNG files have **not yet been uploaded to GitHub**.
+
 A November 18 startup screenshot was supplied during the working session but its original PNG has **not** been added to the GitHub repository. See [E01 transcript](E01-20261118-docker-inventory-transcript.md), a transcription of the observed PowerShell output; this is not an original screenshot. November 7 observations are described separately in session notes.
 
 ## Capture **during** each test
