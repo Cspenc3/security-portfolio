@@ -1,9 +1,9 @@
 # Phase 1 evidence directory
 
-No evidence files have been uploaded yet. The November 7 observations come from live screenshots/output and are described in the session notes.
+A November 18 startup screenshot was supplied during the working session but its original PNG has **not** been added to the GitHub repository. See [E01 transcript](E01-20261118-docker-inventory-transcript.md), a transcription of the observed PowerShell output; this is not an original screenshot. November 7 observations are described separately in session notes.
 
 ## Capture **during** each test
-- E01-YYYYMMDD-docker-containers.png — all running services and ports, immediately after startup.
+- E01-20261118-docker-containers.png — all running services and ports, immediately after startup.
 - E02-YYYYMMDD-simulation-dashboard.png — process simulator status, before any control changes.
 - E03-YYYYMMDD-hmi-T0.png — first process measurement snapshot.
 - E04-YYYYMMDD-hmi-T1.png — second reading about 60 seconds later.

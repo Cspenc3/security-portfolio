@@ -7,3 +7,4 @@ P1-05,2026-11-07,HMI,Windows browser after restart,HMI login/dashboard accessibl
 P1-06,Pending,HMI,Two process readings 60s apart,Measured timestamped values,Not performed,Not tested,TBD,Check live updates
 P1-07,Pending,PLC,Management page and runtime status,Current state identified,Not performed,Not tested,TBD,Check PLC-to-process relationship
 P1-08,Pending,Network,All container networks and intended flows,Seven-container mapping,Partial HMI/EWS only,Partial,TBD,Need full topology
+P1-01B,2026-11-18,GRFICS,Startup container health and published host ports,Seven expected containers running and health checks passing,Seven containers reported Up About a minute (healthy); host ports match earlier inventory,Pass; current session,evidence/E01-20261118-docker-inventory-transcript.md,Application health and PLC-process data path are not verified

@@ -1,8 +1,8 @@
-asset_id,container,lab_role,host_to_container_port,observed_state_2026_11_07,observed_network_addresses,verification_state,notes
-A-01,caldera,Adversary emulation tool,8888:8888,Running,Not recorded,Not tested,Do not use for active tests during Phase 1
-A-02,EWS,Engineering workstation,6080:6080,Running,"grfics_a-grfics-admin=172.18.0.3; grfics_b-ics-net=192.168.95.5",HTTP 200 from Windows on 6080,Container identity and role observed
-A-03,router,Inter-zone router,Not published,Running,Not recorded,Not tested,Routing and policies to inspect later
-A-04,kali,Lab attacker workstation,6088:6080,Running,Not recorded,Not tested,No scanning during Phase 1
-A-05,plc,Controller / OpenPLC management,8080:8080,Running,Not recorded,Not tested,Management page and controller runtime pending
-A-06,HMI,SCADA-LTS interface,6081:8080,Running,"grfics_a-grfics-admin=172.18.0.4; grfics_c-dmz-net=192.168.90.107",HTTP 302 internally; browser login/dashboard observed following restart,Prior HTTP timeout recovery detailed separately
-A-07,simulation,Chemical plant visualization,80:80,Running,Not recorded,Web dashboard displayed,Live process communications not yet proven
+asset_id,container,lab_role,host_to_container_port,observed_state_2026_11_07,observed_network_addresses,verification_state,notes,observed_state_2026_11_18
+A-01,caldera,Adversary emulation tool,8888:8888,Running,Not recorded,Not tested,Do not use for active tests during Phase 1,Up about a minute (healthy)
+A-02,EWS,Engineering workstation,6080:6080,Running,"grfics_a-grfics-admin=172.18.0.3; grfics_b-ics-net=192.168.95.5",HTTP 200 from Windows on 6080,Container identity and role observed,Up about a minute (healthy)
+A-03,router,Inter-zone router,Not published,Running,Not recorded,Not tested,Routing and policies to inspect later,Up about a minute (healthy)
+A-04,kali,Lab attacker workstation,6088:6080,Running,Not recorded,Not tested,No scanning during Phase 1,Up about a minute (healthy)
+A-05,plc,Controller / OpenPLC management,8080:8080,Running,Not recorded,Not tested,Management page and controller runtime pending,Up about a minute (healthy)
+A-06,HMI,SCADA-LTS interface,6081:8080,Running,"grfics_a-grfics-admin=172.18.0.4; grfics_c-dmz-net=192.168.90.107",HTTP 302 internally; browser login/dashboard observed following restart,Prior HTTP timeout recovery detailed separately,Up about a minute (healthy)
+A-07,simulation,Chemical plant visualization,80:80,Running,Not recorded,Web dashboard displayed,Live process communications not yet proven,Up about a minute (healthy)
