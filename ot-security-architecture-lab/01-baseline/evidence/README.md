@@ -13,7 +13,7 @@ All four PNG files were confirmed present in this folder. The observation report
 
 ## Upcoming checks
 
-- E05 — PLC management/runtime page screenshot (do not expose credentials).
+- E05 — [PLC runtime observation](E05-20261118-plc-runtime-observation.md) recorded; **dashboard PNG not yet uploaded**. Need latest log excerpt and communications verification.
 - E06 — Controller/HMI communication or network verification output, appropriately redacted.
 - Additional evidence only when associated tests are actually performed.
 
