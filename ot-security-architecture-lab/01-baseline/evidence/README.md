@@ -1,18 +1,22 @@
 # Phase 1 evidence directory
 
-An E03–E04 HMI comparison report has been published as [E03–E04 process observations](E03-E04-20261118-hmi-comparison.md). The actual E03 and E04 PNG files have **not yet been uploaded to GitHub**.
+## Verified, published evidence — November 18, 2026
 
-A November 18 startup screenshot was supplied during the working session but its original PNG has **not** been added to the GitHub repository. See [E01 transcript](E01-20261118-docker-inventory-transcript.md), a transcription of the observed PowerShell output; this is not an original screenshot. November 7 observations are described separately in session notes.
+| Checkpoint | Screenshot | Written observations |
+|---|---|---|
+| E01 — Container inventory | [Docker containers](E01-20261118-docker-containers.png) | [Startup transcript](E01-20261118-docker-inventory-transcript.md) |
+| E02 — Plant simulator | [GRFICS process dashboard](E02-20261118-simulation-dashboard.png) | [Simulator observation](E02-20261118-simulation-observation.md) |
+| E03 — Initial HMI reading | [SCADA-LTS T0](E03-20261118-hmi-T0.png) | [T0/T1 comparison](E03-E04-20261118-hmi-comparison.md) |
+| E04 — Subsequent HMI reading | [SCADA-LTS T1](E04-20261118-hmi-T1.png) | [T0/T1 comparison](E03-E04-20261118-hmi-comparison.md) |
 
-## Capture **during** each test
-- E01-20261118-docker-containers.png — all running services and ports, immediately after startup.
-- E02-YYYYMMDD-simulation-dashboard.png — process simulator status, before any control changes.
-- E03-YYYYMMDD-hmi-T0.png — first process measurement snapshot.
-- E04-YYYYMMDD-hmi-T1.png — second reading about 60 seconds later.
-- E05-YYYYMMDD-plc-runtime.png — PLC management/status display, without exposing credentials.
-- E06-YYYYMMDD-terminal-redacted.txt — relevant command output with timestamps.
-- E07-YYYYMMDD-hmi-recovery.png — if incident reproduces, sanitized before/after evidence.
+All four PNG files were confirmed present in this folder. The observation reports explain what the evidence supports and what remains unverified.
 
-Use screenshot names as references in test-results.csv and observations. Add readable cropped evidence and explain what each image proves. Do not upload credentials, tokens, browser profiles, employer production configurations, or captures from non-lab systems. Review and sanitize PCAPs before publishing them in Phase 3.
+## Upcoming checks
 
-- E02-20261118-simulation-observation.md — observed dashboard findings transcribed from screenshot supplied November 18; **PNG image is not yet published to GitHub**.
+- E05 — PLC management/runtime page screenshot (do not expose credentials).
+- E06 — Controller/HMI communication or network verification output, appropriately redacted.
+- Additional evidence only when associated tests are actually performed.
+
+## Publication rules
+
+All screenshots and captures must originate from the isolated lab. Do not upload passwords, tokens, personal details, employer configurations, non-lab network captures or sensitive process information. Keep observed facts distinct from inference and clearly label unresolved issues.
