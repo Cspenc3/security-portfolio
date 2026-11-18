@@ -12,3 +12,5 @@ A November 18 startup screenshot was supplied during the working session but its
 - E07-YYYYMMDD-hmi-recovery.png — if incident reproduces, sanitized before/after evidence.
 
 Use screenshot names as references in test-results.csv and observations. Add readable cropped evidence and explain what each image proves. Do not upload credentials, tokens, browser profiles, employer production configurations, or captures from non-lab systems. Review and sanitize PCAPs before publishing them in Phase 3.
+
+- E02-20261118-simulation-observation.md — observed dashboard findings transcribed from screenshot supplied November 18; **PNG image is not yet published to GitHub**.
