@@ -31,10 +31,10 @@ The HMI also displayed feed 1 valve position at 100.0% and feed 2 valve position
 
 ## Evidence publication
 
-- **E03:** `E03-20261118-hmi-T0.png` — initial observed display, needs GitHub upload.
-- **E04:** `E04-20261118-hmi-T1.png` — subsequent observed display, needs GitHub upload.
+- **E03:** [Initial HMI reading (T0)](E03-20261118-hmi-T0.png) — uploaded and verified in the Phase 1 evidence folder.
+- **E04:** [Second HMI reading (T1)](E04-20261118-hmi-T1.png) — uploaded and verified in the Phase 1 evidence folder.
 
-Original screenshots were shared in the working conversation but **are not yet published in this evidence folder**. Upload both sanitized images, then link them directly here.
+Both PNG screenshots are now published in GitHub. The written table above transcribes the visible values from these screenshots.
 
 ## Next verification
 
