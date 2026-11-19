@@ -1,6 +1,16 @@
 # Project 001 — OT Security Architecture & Defense Lab
 
-**START HERE.** One simulated chemical plant. One engineering investigation. Multiple cybersecurity skill areas, each backed by evidence.
+## The scenario
+
+You are assigned to assess a **simulated industrial chemical plant** that relies on a controller, SCADA/HMI, engineering workstation, field-device simulation, and interconnected networks to operate a reactor.
+
+Your engineering task is to **establish normal operation, understand how components communicate, identify security and availability risks, design and validate defensive controls, and investigate suspicious behavior without unnecessarily disrupting the process**. Every conclusion must follow from reproducible tests and evidence.
+
+### The environment at a glance
+
+![GRFICSv3 Phase 1 high-level topology](01-baseline/diagrams/grficsv3-phase-01-high-level-topology.png)
+
+*Figure 1 — Initial GRFICSv3 lab topology. Conceptual illustration based on a partially verified asset inventory; not all pictured paths and network memberships have been confirmed. We will refine this same design when we reach network engineering and Cisco Packet Tracer.*
 
 **Status:** Phase 1 — baseline verification in progress. This is an isolated personal lab, not a production security assessment.
 
@@ -30,14 +40,14 @@ Each phase is **a chapter in the same plant assessment**, not an unrelated portf
 
 ## Verified work so far
 
-On **November 7, 2026**, seven GRFICSv3 containers displayed as running; the chemical-plant visualization loaded; SCADA-LTS was accessed; and an HMI service-availability problem was systematically investigated and recovered by restarting the affected container.
+During sessions on **November 7 and November 18, 2026**, seven GRFICSv3 containers were inventoried. The simulation loaded, SCADA-LTS displayed changing reactor values, and OpenPLC reported a running Chemical Reactor program. The PLC runtime log excerpt included device connection refusals; whether they were startup-only or ongoing still needs investigation. A previous HMI web-access timeout was recovered by restarting the affected HMI container, without proving its underlying root cause.
 
-- [Read the documented HMI investigation](01-baseline/hmi-availability-case.md)
-- [Read the historical observations and displayed reactor readings](01-baseline/observations-2026-11-07.md)
-- [View current asset inventory](01-baseline/asset-inventory.csv)
-- [Follow Phase 1 tests and evidence capture instructions](01-baseline/README.md)
+- [Four verified screenshots and supporting observations](01-baseline/evidence/README.md)
+- [HMI baseline T0 vs. T1 comparison](01-baseline/evidence/E03-E04-20261118-hmi-comparison.md)
+- [OpenPLC runtime observation and unresolved connection findings](01-baseline/evidence/E05-20261118-plc-runtime-observation.md)
+- [Phase 1 tests and next verification steps](01-baseline/README.md)
 
-**Not yet proven:** Live PLC-to-process communications, industrial PCAP analysis, deployed security controls or chemical-plant detection rules. Historical screenshots were reviewed during the working session but have not yet been uploaded here.
+**Not yet proven:** Complete controller-to-process communication paths, specific industrial packet exchanges, implemented segmentation controls, or chemical-plant detection rules. The initial topology is a learning-oriented map to be validated, not a security assessment result.
 
 ## Evidence and integrity
 
