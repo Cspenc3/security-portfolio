@@ -14,7 +14,8 @@ All four PNG files were confirmed present in this folder. The observation report
 ## Upcoming checks
 
 - E05 — [PLC runtime observation](E05-20261118-plc-runtime-observation.md) recorded; **dashboard PNG not yet uploaded**. [Follow-up log excerpt E05b](E05b-20261119-plc-latest-logs-observation.md) confirms Analyzer reconnect and Modbus client activity; communication health remains partially verified. **Neither E05 nor E05b PNG has been uploaded yet.**
-- E06 — Controller/HMI communication or network verification output, appropriately redacted.
+- E06 — [Slave-device inventory observation](E06-20261119-slave-device-inventory-observation.md): six configured TCP devices and mapped OpenPLC analog I/O ranges. The PNG `E06-20261119-slave-device-inventory.png` still needs upload; connection endpoint and live health checks remain outstanding.
+- E07 — Controller/device network endpoint and communication verification, appropriately redacted.
 - Additional evidence only when associated tests are actually performed.
 
 ## Publication rules
