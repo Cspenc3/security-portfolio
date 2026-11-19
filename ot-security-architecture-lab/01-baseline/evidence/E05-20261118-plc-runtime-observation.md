@@ -38,4 +38,6 @@ Scroll **inside the Runtime Logs panel** to the very bottom. Capture the newest 
 
 `E05-20261118-plc-runtime.png` — screenshot of PLC dashboard and visible first log excerpt. A follow-up screenshot of the **bottom of the log** may be named `E05b-20261118-plc-latest-logs.png`.
 
-**Status:** Checkpoint 4 partially completed; PLC runtime status observed, device communications unresolved.
+**Update (November 19):** [Later runtime log excerpt E05b](E05b-20261119-plc-latest-logs-observation.md) shows an Analyzer reconnection and Modbus client activity. Other device connection states remain unverified.
+
+**Status:** Checkpoint 4 partially completed; PLC runtime status observed, device communications not fully verified.
