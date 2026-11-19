@@ -1,7 +1,7 @@
 # E05 — OpenPLC runtime dashboard: initial observation
 
 **Date:** November 18, 2026  
-**Source:** Screenshot supplied during Phase 1 Checkpoint 4. **Screenshot has not yet been uploaded to GitHub.**
+**Source:** Screenshot supplied during Phase 1 Checkpoint 4. Screenshot is now present: [E05 OpenPLC runtime](E05-20261118-plc-runtime.png).
 **Scope:** Read-only observation of GRFICSv3 OpenPLC management dashboard.
 
 ## Verified dashboard fields
@@ -36,7 +36,7 @@ Scroll **inside the Runtime Logs panel** to the very bottom. Capture the newest 
 
 ## Screenshot to upload
 
-`E05-20261118-plc-runtime.png` — screenshot of PLC dashboard and visible first log excerpt. A follow-up screenshot of the **bottom of the log** may be named `E05b-20261118-plc-latest-logs.png`.
+[E05-20261118-plc-runtime.png](E05-20261118-plc-runtime.png) — uploaded screenshot of PLC dashboard and visible first log excerpt. A follow-up screenshot of the **bottom of the log** may be named `E05b-20261118-plc-latest-logs.png`.
 
 **Update (November 19):** [Later runtime log excerpt E05b](E05b-20261119-plc-latest-logs-observation.md) shows an Analyzer reconnection and Modbus client activity. Other device connection states remain unverified.
 
