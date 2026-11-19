@@ -3,7 +3,7 @@
 **Observation date:** November 19, 2026  
 **Source:** User-provided screenshot of the OpenPLC "Slave Devices" page from an isolated GRFICSv3 simulated chemical plant.  
 **Method:** Read-only review; no changes made to configuration.  
-**Evidence status:** Screenshot was shared in the project conversation but the PNG is **not yet uploaded to GitHub**.
+**Evidence status:** Original PNG screenshot is now uploaded and verified in GitHub: [E06 — Slave Devices inventory](E06-20261119-slave-device-inventory.png).
 
 ## Device configuration observed
 
@@ -39,6 +39,6 @@ Read-only: inspect one device's detailed settings without saving changes to iden
 
 `E06-20261119-slave-device-inventory.png`
 
-After uploading, link it directly here and in the Phase 1 evidence index.
+The screenshot is published alongside this observation report and linked in the Phase 1 evidence index.
 
 **Finding:** Configured slave-device inventory verified. **Communication health and destination endpoints:** not yet verified.
