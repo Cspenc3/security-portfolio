@@ -1,7 +1,7 @@
 # E05b — PLC runtime logs: later visible excerpt
 
 **Observation date:** November 19, 2026 (as shared during the project session).
-**Source:** Screenshot supplied from the GRFICSv3 OpenPLC dashboard. Original PNG is **not yet uploaded to GitHub**.
+**Source:** Screenshot supplied from the GRFICSv3 OpenPLC dashboard. Original PNG is uploaded: [E05b later PLC logs](E05b-20261119-plc-latest-logs.png).
 **Method:** Read-only examination of later visible runtime log lines, following the earlier E05 excerpt.
 
 ## Observed controller status
@@ -43,6 +43,6 @@ Without changing logic or device settings, open OpenPLC **Slave Devices** to inv
 
 ## Evidence publication
 
-- Upload the original screenshot as `E05b-20261119-plc-latest-logs.png`.
+- [Original screenshot uploaded](E05b-20261119-plc-latest-logs.png).
 - The earlier dashboard screenshot should be uploaded separately as `E05-20261118-plc-runtime.png`.
 - Do not publish any passwords or other lab secrets.
