@@ -10,3 +10,4 @@ N-08,Feed 1,grfics_b-ics-net candidate,configured_modbus_tcp_endpoint,192.168.95
 N-09,Feed 2,grfics_b-ics-net candidate,configured_modbus_tcp_endpoint,192.168.95.11:502,2026-11-21,Configured not traffic-verified,OpenPLC Slave ID 247; distinct endpoint from Feed 1; verify live connectivity
 N-10,Purge,grfics_b-ics-net candidate,configured_modbus_tcp_endpoint,192.168.95.12:502,2026-11-21,Configured not traffic-verified,OpenPLC Unit ID 247; distinct IP from Feed 1 and Feed 2; actual traffic not verified
 N-11,Product,grfics_b-ics-net candidate,configured_modbus_tcp_endpoint,192.168.95.13:502,2026-11-21,Configured not traffic-verified,Unit ID 247; endpoint observed in Product edit page; verify actual network membership and communication
+N-12,Tank,grfics_b-ics-net candidate,configured_modbus_tcp_endpoint,192.168.95.14:502,2026-11-21,Configured not traffic-verified,OpenPLC Unit ID 247; endpoint shown on Tank edit page; live connectivity not established
