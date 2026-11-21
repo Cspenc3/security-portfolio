@@ -92,7 +92,11 @@ Instead of stopping at the configuration screen, I checked successive levels of 
 
 *Figure 5 — Listener evidence for each configured target.*
 
-The most recent `ss -tn` screenshot in the working session showed connections from the PLC at **`192.168.95.2`** to **`192.168.95.10–15:502`**, each in **ESTAB** state. **That screenshot has not yet been committed to GitHub**, so the claim is transcribed from the session observation pending publication of its original capture.
+A saved `ss -tn` screenshot confirms **six ESTAB TCP sessions** between the PLC at **`192.168.95.2`** and each simulated field-device address **`192.168.95.10–15:502`**.
+
+![Six established PLC-to-field-device TCP sessions](evidence/E17-20261121-plc-established-connections.png)
+
+*Figure 6 — Original E17 session evidence. An established TCP session confirms a connection at transport level, not the validity of Modbus request/response payloads.*
 
 **Assessment:** The six targets are configured, assigned, listening, and had established TCP sessions. We have **not** yet proven the validity of Modbus function codes, register data, or application responses.
 
