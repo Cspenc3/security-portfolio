@@ -62,6 +62,9 @@ Check whether TCP 502 listeners are present and which local addresses are bound.
 
 ## Evidence image
 
-Save and upload original screenshot as `E15-20261121-simulation-ip-aliases.png`, then update this report with the verified link.
+[E15-20261121-simulation-ip-aliases.png](E15-20261121-simulation-ip-aliases.png) — uploaded and linked beside this report.
 
 **Checkpoint result:** Six device IP addresses physically located within the lab's simulation container; application-layer communication not yet verified.
+
+
+**Follow-up verification:** [E16](E16-20261121-modbus-tcp-listeners.md) subsequently confirmed TCP 502 listeners bound to all six secondary IPv4 aliases. Successful Modbus application transactions have not yet been established.
