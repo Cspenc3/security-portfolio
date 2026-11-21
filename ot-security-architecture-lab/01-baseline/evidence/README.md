@@ -20,7 +20,7 @@ All four PNG files were confirmed present in this folder. The observation report
 - E09 — [Purge screenshot](E09-20261121-purge-modbus-config.png) + [configuration findings](E09-20261121-purge-modbus-configuration.md), configured endpoint `192.168.95.12:502`, Unit ID 247. PNG uploaded; communication not verified.
 - E10 — [Product screenshot](E10-20261121-product-modbus-config.png) and [configuration findings](E10-20261121-product-modbus-configuration.md), endpoint `192.168.95.13:502`, Unit ID 247. Live traffic unverified.
 - E11 — [Tank screenshot](E11-20261121-tank-modbus-config.png) and [configuration findings](E11-20261121-tank-modbus-configuration.md), endpoint `192.168.95.14:502`, Unit ID 247; no live traffic verified.
-- E12 — [Analyzer Modbus configuration findings](E12-20261121-analyzer-modbus-configuration.md), endpoint `192.168.95.15:502`, Unit ID 247; **three** input registers (other devices: two). Original screenshot needs upload.
+- E12 — [Analyzer screenshot](E12-20261121-analyzer-modbus-config.png) and [Modbus configuration findings](E12-20261121-analyzer-modbus-configuration.md), endpoint `192.168.95.15:502`, Unit ID 247; **three** input registers (other devices: two). Both files verified.
 
 All six configured device endpoints are consolidated in the [Phase 1 Modbus endpoint inventory](../modbus-endpoint-inventory.md). This inventory documents configuration only, not live packet capture.
 
