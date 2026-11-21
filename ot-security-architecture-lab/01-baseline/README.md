@@ -39,7 +39,7 @@ Record HTTP status codes; redirects (301/302) mean the web server responded, not
 
 ## Completed configuration inventory
 
-The [six-device Modbus TCP endpoint inventory](modbus-endpoint-inventory.md) documents Feed 1, Feed 2, Purge, Product, Tank and Analyzer network destinations, Unit IDs and assigned input/output word ranges from OpenPLC. These are configured destinations; **actual Modbus packet exchange remains to be tested**.
+The [six-device Modbus TCP endpoint inventory](modbus-endpoint-inventory.md) documents Feed 1, Feed 2, Purge, Product, Tank and Analyzer network destinations, Unit IDs and assigned input/output word ranges from OpenPLC. The subsequent [simulation interface discovery](evidence/E15-20261121-simulation-ip-alias-discovery.md) identified all six configured IPs as secondary addresses on **one simulation container**, not six separate confirmed hosts. **Actual Modbus packet exchange remains to be tested**.
 
 ## Further Phase 1 verification (not yet complete)
 1. Record the PLC management screen and runtime status.
