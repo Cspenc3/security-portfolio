@@ -15,7 +15,7 @@ All four PNG files were confirmed present in this folder. The observation report
 
 - E05 — [Initial PLC dashboard screenshot](E05-20261118-plc-runtime.png) + [runtime investigation](E05-20261118-plc-runtime-observation.md); [E05b later log screenshot](E05b-20261119-plc-latest-logs.png) + [findings](E05b-20261119-plc-latest-logs-observation.md). Both screenshots uploaded; some device statuses remain unverified.
 - E06 — [Uploaded Slave Devices screenshot](E06-20261119-slave-device-inventory.png) and [written inventory findings](E06-20261119-slave-device-inventory-observation.md): six configured TCP devices and OpenPLC analog I/O ranges. Endpoints and live health still need verification.
-- E07 — [Feed 1 Modbus TCP configuration findings](E07-20261119-feed1-modbus-configuration.md), with configured endpoint `192.168.95.10:502` and Unit ID 247. **E07 screenshot PNG not yet uploaded; live communications not yet verified.**
+- E07 — [Feed 1 configuration screenshot](E07-20261119-feed1-modbus-config.png) and [written Modbus TCP endpoint findings](E07-20261119-feed1-modbus-configuration.md). Configured endpoint `192.168.95.10:502`, Unit ID 247; live communications not yet verified.
 - Additional evidence only when associated tests are actually performed.
 
 ## Publication rules
