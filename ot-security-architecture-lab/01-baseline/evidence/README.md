@@ -61,7 +61,7 @@ All six use configured Modbus TCP port `502` and Unit ID `247`. See the [one-pag
 | E15 — All six Modbus destination IPs are aliases on simulation `eth0` | [Screenshot](E15-20261121-simulation-ip-aliases.png) | [IP alias analysis](E15-20261121-simulation-ip-alias-discovery.md) |
 | E16 — Six TCP 502 listeners on those addresses | [Screenshot](E16-20261121-modbus-tcp-listeners.png) | [Listener analysis](E16-20261121-modbus-tcp-listeners.md) |
 
-**Follow-up observation:** A later `ss -tn` snapshot showed six established TCP sessions from PLC `192.168.95.2` to the configured device endpoints. The original session screenshot remains in the working conversation and **has not yet been committed to GitHub**. The finding is summarized transparently in the [Phase 1 case study](../README.md).
+**E17 — Established PLC connections:** [Original TCP session screenshot](E17-20261121-plc-established-connections.png) shows six established connections from PLC `192.168.95.2` to the configured device endpoints. It is embedded directly in the [Phase 1 case study](../README.md). This verifies transport-level sessions, not successful Modbus application transactions.
 
 **Finding:** Device addresses are logical endpoints inside one simulation container. TCP listeners and established sessions were observed, but Modbus payloads have not been decoded.
 
