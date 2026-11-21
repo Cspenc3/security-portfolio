@@ -12,13 +12,23 @@ Your engineering task is to **establish normal operation, understand how compone
 
 *Figure 1 — Initial GRFICSv3 lab topology. Conceptual illustration based on a partially verified asset inventory; not all pictured paths and network memberships have been confirmed. We will refine this same design when we reach network engineering and Cisco Packet Tracer.*
 
-**Status:** Phase 1 — baseline verification in progress. This is an isolated personal lab, not a production security assessment.
+**Status:** Phase 1 asset discovery and transport-level verification documented; packet-level industrial protocol analysis and protection tests remain ahead. This is an isolated personal lab, not a production security assessment.
+
+### Phase 1 — The first engineering finding
+
+**The controller was configured to communicate with six Modbus TCP devices. Where were those devices actually hosted?**
+
+The investigation found that **all six target addresses belong to one simulation container as secondary IPs**. All six had TCP port 502 listeners, and a later observation showed established TCP sessions from OpenPLC. We also observed changing HMI values and differentiated early connection errors from later activity—without treating them as evidence of an attack.
+
+**[Read the Phase 1 assessment — one page, illustrated and evidence-based](01-baseline/README.md)**
+
+*The report tells the investigation from start to finish. The original screenshots, register details, test logs and runbook remain available inside its optional technical appendix.*
 
 ## Find the skills relevant to your role
 
 | What you're evaluating | Go directly to | Evidence status |
 |---|---|---|
-| **OT / ICS security engineering** | [Plant baseline and HMI investigation](01-baseline/README.md) · [Architecture & trust boundaries](02-architecture/README.md) | Baseline partly observed; architecture work ahead |
+| **OT / ICS security engineering** | [Phase 1 operational baseline case study](01-baseline/README.md) · [Architecture & trust boundaries](02-architecture/README.md) | Baseline documented; boundary analysis ahead |
 | **SOC analyst / incident response** | **[SOC investigation & detection](05-detection-response/README.md)** | A prior DNS investigation is documented; *chemical-plant detection* is planned |
 | **Network / security engineering** | [Verified configuration inventory: six Modbus endpoints](01-baseline/modbus-endpoint-inventory.md) · [Network inventory](01-baseline/network-inventory.csv) · [Industrial traffic analysis](03-protocol-analysis/README.md) | Network memberships observed; protocol capture pending |
 | **Risk / project management** | [Charter](00-governance/project-charter.md) · [Risk register](00-governance/risk-register.csv) · [Decision log](00-governance/decision-log.md) | Living project documents published |
@@ -38,16 +48,13 @@ Your engineering task is to **establish normal operation, understand how compone
 
 Each phase is **a chapter in the same plant assessment**, not an unrelated portfolio project.
 
-## Verified work so far
+## Assessment progress
 
-During sessions on **November 7 and November 18, 2026**, seven GRFICSv3 containers were inventoried. The simulation loaded, SCADA-LTS displayed changing reactor values, and OpenPLC reported a running Chemical Reactor program. The PLC runtime log excerpt included device connection refusals; whether they were startup-only or ongoing still needs investigation. A previous HMI web-access timeout was recovered by restarting the affected HMI container, without proving its underlying root cause.
+**Phase 1 — Evidence-backed operational and network baseline:** The assessment identified seven running containers, documented SCADA-LTS process observations, and established the six Modbus TCP endpoints' configuration, IP ownership, listening services and observed TCP connections. **Modbus packet contents, process-variable meaning and security controls remain unverified.**
 
-- [Four verified screenshots and supporting observations](01-baseline/evidence/README.md)
-- [HMI baseline T0 vs. T1 comparison](01-baseline/evidence/E03-E04-20261118-hmi-comparison.md)
-- [OpenPLC runtime observation and unresolved connection findings](01-baseline/evidence/E05-20261118-plc-runtime-observation.md)
-- [Phase 1 tests and next verification steps](01-baseline/README.md)
+**[Read Phase 1: The full investigation and conclusions](01-baseline/README.md)** — start with the report; open the underlying evidence only when deeper verification is useful.
 
-**Not yet proven:** Complete controller-to-process communication paths, specific industrial packet exchanges, implemented segmentation controls, or chemical-plant detection rules. The initial topology is a learning-oriented map to be validated, not a security assessment result.
+**Next:** Phase 2 investigates architecture and trust boundaries; Phase 3 will establish an application-layer traffic baseline using packet evidence.
 
 ## Evidence and integrity
 
