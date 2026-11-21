@@ -1,6 +1,6 @@
 # E12 — Analyzer Modbus TCP configuration
 
-**Observed November 21, 2026.** Source: isolated GRFICSv3 OpenPLC **Edit slave device** screenshot supplied in the project conversation; reviewed read-only. **The original PNG is not yet uploaded to GitHub.**
+**Observed November 21, 2026.** Source: isolated GRFICSv3 OpenPLC **Edit slave device** screenshot supplied in the project conversation; reviewed read-only. **The original PNG has been uploaded and verified:** [E12 Analyzer configuration screenshot](E12-20261121-analyzer-modbus-config.png).
 
 ## Configured fields
 
@@ -29,6 +29,6 @@ The input-register quantity **differs from Feed 1, Feed 2, Purge, Product and Ta
 
 ## Required screenshot
 
-Upload `E12-20261121-analyzer-modbus-config.png` beside this report, then update the image link. No PNG is claimed present until its GitHub upload is verified.
+[E12-20261121-analyzer-modbus-config.png](E12-20261121-analyzer-modbus-config.png) — uploaded to this evidence folder and linked to this report.
 
 **Next phase-1 step:** Confirm active paths without changing field values or PLC logic, using passive or minimally intrusive observations.
