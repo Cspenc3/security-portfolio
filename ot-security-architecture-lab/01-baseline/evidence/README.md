@@ -17,7 +17,8 @@ All four PNG files were confirmed present in this folder. The observation report
 - E06 — [Uploaded Slave Devices screenshot](E06-20261119-slave-device-inventory.png) and [written inventory findings](E06-20261119-slave-device-inventory-observation.md): six configured TCP devices and OpenPLC analog I/O ranges. Endpoints and live health still need verification.
 - E07 — [Feed 1 configuration screenshot](E07-20261119-feed1-modbus-config.png) and [written Modbus TCP endpoint findings](E07-20261119-feed1-modbus-configuration.md). Configured endpoint `192.168.95.10:502`, Unit ID 247; live communications not yet verified.
 - E08 — [Feed 2 screenshot](E08-20261121-feed2-modbus-config.png) and [Modbus configuration findings](E08-20261121-feed2-modbus-configuration.md), configured target `192.168.95.11:502`, Unit ID 247; no live traffic verified.
-- E09 — [Purge configuration findings](E09-20261121-purge-modbus-configuration.md), configured endpoint `192.168.95.12:502`, Unit ID 247. PNG screenshot pending upload.
+- E09 — [Purge screenshot](E09-20261121-purge-modbus-config.png) + [configuration findings](E09-20261121-purge-modbus-configuration.md), configured endpoint `192.168.95.12:502`, Unit ID 247. PNG uploaded; communication not verified.
+- E10 — [Product Modbus TCP configuration findings](E10-20261121-product-modbus-configuration.md), configured endpoint `192.168.95.13:502`, Unit ID 247. Original PNG pending upload.
 - Additional evidence only when associated tests are actually performed.
 
 ## Publication rules
