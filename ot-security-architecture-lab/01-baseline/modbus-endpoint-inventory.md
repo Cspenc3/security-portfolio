@@ -17,12 +17,16 @@
 
 A subsequent [read-only inspection of the `simulation` container interfaces](evidence/E15-20261121-simulation-ip-alias-discovery.md) found **all six configured device IP addresses assigned as secondary IPv4 addresses on `eth0`**. They are logical Modbus endpoint addresses hosted inside the **same simulation container** (`192.168.95.45` is its primary ICS address); they are not six separate verified Docker containers. The PLC uses `192.168.95.2` on the same ICS Docker network. This resolves endpoint *location*, not TCP listener health or Modbus transaction success.
 
+## E16 listener verification
+
+A subsequent read-only [E16 listener inspection](evidence/E16-20261121-modbus-tcp-listeners.md) found TCP **LISTEN** sockets at all six configured destination addresses on port 502 within the simulation container. This verifies socket bindings, **not** end-to-end controller connections or valid Modbus application transactions.
+
 ## Findings and limits
 
-1. Six **unique** configured endpoints lie in the `192.168.95.0/24` address range and target TCP port 502. Their IP aliases have now been observed on the simulation container, but listener bindings and ACL permissions are still unknown.
+1. Six **unique** configured endpoints lie in the `192.168.95.0/24` address range and target TCP port 502. Their IP aliases have now been observed on the simulation container and **TCP 502 listeners are verified**; ACL permissions and live communications are still unknown.
 2. Analyzer is allocated **three input words**; the other five are allocated two each. This is the only observed register-*quantity* difference.
 3. The edit screens have generic `%IW100` and `%QW100` section headings even where the summary table allocates different word addresses. Exact mapping from these fields to **on-wire Modbus register offsets/function codes** has not been demonstrated.
 4. Earlier OpenPLC startup logs contained connection refusals; a later log excerpt showed an Analyzer connection and Modbus client activity. Historical log evidence does not establish continuous healthy data exchange across all six devices.
-5. **Next engineering question:** Are services listening on each alias at TCP 502, does the PLC exchange valid Modbus messages with them, and what process data is carried? Validate using read-only listener inspection and then packet evidence with protocol dissection.
+5. **Next engineering question:** The E16 listener check is complete. **Next:** Does the PLC exchange valid Modbus messages with these listeners, and what process data is carried? Validate with non-disruptive session inspection and later packet evidence with protocol dissection.
 
 **Project continuity:** These records inform the existing [high-level topology](diagrams/grficsv3-phase-01-high-level-topology.png). We will update it after network tests rather than invent links or building the Cisco Packet Tracer model prematurely.
