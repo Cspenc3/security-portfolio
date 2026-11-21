@@ -3,7 +3,7 @@
 **Observation date:** November 21, 2026  
 **Source:** Screenshot supplied from the OpenPLC **Edit slave device** screen for **Purge**, in the isolated GRFICSv3 lab.  
 **Method:** Read-only inspection. No changes or saves reported.
-**Screenshot status:** Image supplied in conversation; PNG not yet uploaded to GitHub.
+**Screenshot status:** [Purge screenshot uploaded](E09-20261121-purge-modbus-config.png).
 
 ## Configured endpoint
 
@@ -40,6 +40,6 @@ These are distinct endpoint addresses using the same Modbus Unit ID. That does n
 
 ## Evidence to upload
 
-`E09-20261121-purge-modbus-config.png` — original OpenPLC screenshot in the same evidence directory. This record is textual evidence only until the screenshot is uploaded and linked.
+`E09-20261121-purge-modbus-config.png` — original OpenPLC screenshot in the same evidence directory. [Screenshot published beside this report](E09-20261121-purge-modbus-config.png).
 
 **Next:** Inspect Product, Tank, and Analyzer endpoint settings without saving changes. Then validate actual data paths later using read-only network/packet tests.
