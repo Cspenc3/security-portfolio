@@ -2,7 +2,7 @@
 
 **Observation date:** November 19, 2026  
 **Source:** Screenshot provided from the OpenPLC `Edit slave device` view for **Feed 1**. This was a read-only inspection; no configuration was changed.  
-**Evidence status:** Original screenshot is in the working conversation; the PNG has not yet been uploaded to GitHub.
+**Evidence status:** Screenshot uploaded and verified in GitHub: [E07 Feed 1 configuration](E07-20261119-feed1-modbus-config.png).
 
 ## Observed configuration
 
@@ -33,6 +33,6 @@ Return to the Slave Devices list **without saving or changing any settings**, th
 
 ## Screenshot to publish
 
-Upload `E07-20261119-feed1-modbus-config.png` to this evidence folder and link it here. No screenshot has yet been uploaded to GitHub for E07.
+[E07-20261119-feed1-modbus-config.png](E07-20261119-feed1-modbus-config.png) is uploaded and linked beside this analysis.
 
 **Status:** Endpoint configuration identified; actual connectivity not yet verified.
