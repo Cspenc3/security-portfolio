@@ -12,3 +12,5 @@ N-10,Purge,grfics_b-ics-net candidate,configured_modbus_tcp_endpoint,192.168.95.
 N-11,Product,grfics_b-ics-net candidate,configured_modbus_tcp_endpoint,192.168.95.13:502,2026-11-21,Configured not traffic-verified,Unit ID 247; endpoint observed in Product edit page; verify actual network membership and communication
 N-12,Tank,grfics_b-ics-net candidate,configured_modbus_tcp_endpoint,192.168.95.14:502,2026-11-21,Configured not traffic-verified,OpenPLC Unit ID 247; endpoint shown on Tank edit page; live connectivity not established
 N-13,Analyzer,grfics_b-ics-net candidate,configured_modbus_tcp_endpoint,192.168.95.15:502,2026-11-21,Configured not traffic-verified,Unit ID 247; input register count 3; runtime log previously reported Analyzer connection; active polling unverified
+N-14,PLC,grfics_a-grfics-admin,network_interface,172.18.0.5,2026-11-21,Observed,Docker inspect plc network memberships; screenshot to upload as E13
+N-15,PLC,grfics_b-ics-net,network_interface,192.168.95.2,2026-11-21,Observed,Docker inspect plc network memberships; same network address range as six configured Modbus endpoints; connectivity unverified
