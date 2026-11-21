@@ -2,7 +2,7 @@
 
 **Date of observation:** November 21, 2026  
 **Source:** User-provided Windows PowerShell screenshot of a read-only Docker inspection of the `simulation` container.  
-**Source screenshot status:** Present in project conversation; PNG not yet uploaded to the GitHub evidence folder.
+**Source screenshot status:** [Original E14 PNG uploaded and verified](E14-20261121-simulation-network-membership.png).
 
 ## Command and output
 
@@ -28,16 +28,16 @@ The six previously recorded OpenPLC Modbus TCP target configurations are `192.16
 
 **Verified:** Docker reports two networks and the listed two IPs for the simulation container at inspection time. Both `plc` and `simulation` attach to `grfics_b-ics-net`.
 
-**Unresolved:** The Modbus endpoints are not among the simulation IPs reported by `docker inspect`. The output alone cannot establish whether those six addresses are additional IP aliases inside a container, addresses on a routed/emulated segment, separate interfaces, or otherwise hosted by the lab. An absence of alias addresses in `docker inspect` is *not* sufficient proof of their absence inside the container.
+**Unresolved:** The Modbus endpoints are not among the simulation IPs reported by `docker inspect`. The output alone cannot establish whether those six addresses are additional IP aliases inside a container, addresses on a routed/emulated segment, separate interfaces, or otherwise hosted by the lab. The subsequent [E15 in-container inspection](E15-20261121-simulation-ip-alias-discovery.md) **confirmed all six aliases** on `simulation` `eth0`. This resolves the original address-location question, but does not prove TCP listener health or traffic. An absence of aliases in `docker inspect` did not mean they were absent inside the container.
 
 **No claim yet:** Device reachability, successful Modbus requests, process-data exchange, segment policy or software vulnerability.
 
 ## Next read-only verification
 
-Run `docker exec simulation ip -o -4 addr show` from Windows PowerShell to list IPv4 assignments on the simulation container's interfaces, including potential additional interface addresses. If the command is unavailable in the image, record the error and use another read-only method later; do not install or change software yet.
+**Completed in E15:** `docker exec simulation ip -o -4 addr show` revealed six secondary IP addresses corresponding to the configured Modbus targets. Next: inspect listening ports or passive traffic.
 
 ## Evidence to publish
 
-`E14-20261121-simulation-network-membership.png` — screenshot from the observation, upload into this same evidence folder.
+[E14-20261121-simulation-network-membership.png](E14-20261121-simulation-network-membership.png) — uploaded and verified in this evidence folder.
 
-**Checkpoint status:** Docker membership discovered; Modbus endpoint hosting and live traffic still under investigation.
+**Checkpoint status:** Docker membership discovered; later E15 identifies Modbus endpoint IP alias hosting, while live traffic remains unverified.
