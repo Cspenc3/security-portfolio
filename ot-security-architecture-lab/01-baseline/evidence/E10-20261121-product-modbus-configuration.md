@@ -2,7 +2,7 @@
 
 **Observation date:** November 21, 2026  
 **Source:** User-supplied OpenPLC **Edit slave device** screen for the Product device in the isolated GRFICSv3 chemical plant simulation.  
-**Method:** Read-only observation. **Actual PNG not yet uploaded to GitHub.**
+**Method:** Read-only observation. [Original PNG uploaded and verified](E10-20261121-product-modbus-config.png).
 
 ## Observed configured values
 
@@ -36,6 +36,6 @@ The per-device Edit page displays generic memory section labels `%IW100` and `%Q
 
 ## Evidence to upload
 
-`E10-20261121-product-modbus-config.png` — screenshot captured from the Product edit page. Place it in this directory and update the link once uploaded.
+`E10-20261121-product-modbus-config.png` — screenshot captured from the Product edit page. [Original screenshot available here](E10-20261121-product-modbus-config.png).
 
 **Next:** Inspect Tank and Analyzer configuration pages without modifying or saving anything; establish an inventory before performing controlled network verification.
