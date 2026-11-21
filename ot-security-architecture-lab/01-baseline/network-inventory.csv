@@ -14,3 +14,5 @@ N-12,Tank,grfics_b-ics-net candidate,configured_modbus_tcp_endpoint,192.168.95.1
 N-13,Analyzer,grfics_b-ics-net candidate,configured_modbus_tcp_endpoint,192.168.95.15:502,2026-11-21,Configured not traffic-verified,Unit ID 247; input register count 3; runtime log previously reported Analyzer connection; active polling unverified
 N-14,PLC,grfics_a-grfics-admin,network_interface,172.18.0.5,2026-11-21,Observed,Docker inspect plc network memberships; screenshot to upload as E13
 N-15,PLC,grfics_b-ics-net,network_interface,192.168.95.2,2026-11-21,Observed,Docker inspect plc network memberships; same network address range as six configured Modbus endpoints; connectivity unverified
+N-16,Simulation,grfics_a-grfics-admin,network_interface,172.18.0.7,2026-11-21,Observed,Docker inspect simulation network memberships; evidence E14; may have additional in-container IPs
+N-17,Simulation,grfics_b-ics-net,network_interface,192.168.95.45,2026-11-21,Observed,Docker inspect simulation; shares ICS network with PLC; six configured Modbus targets .10-.15 remain unlocated
