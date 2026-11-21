@@ -26,7 +26,8 @@ All six configured device endpoints are consolidated in the [Phase 1 Modbus endp
 
 - E13 — [PLC network membership screenshot](E13-20261121-plc-network-membership.png) and [discovery notes](E13-20261121-plc-network-membership.md): admin `172.18.0.5`, ICS `192.168.95.2`.
 - E14 — [Simulation Docker network screenshot](E14-20261121-simulation-network-membership.png) and [findings](E14-20261121-simulation-network-membership.md): admin `172.18.0.7`, ICS primary `192.168.95.45`.
-- E15 — [Six simulation IPv4 aliases discovered](E15-20261121-simulation-ip-alias-discovery.md): all `.10–.15` device IPs live on simulation `eth0` as secondary addresses. Original screenshot `E15-20261121-simulation-ip-aliases.png` still needs upload; services and traffic unverified.
+- E15 — [Six simulation IPv4 aliases screenshot](E15-20261121-simulation-ip-aliases.png) and [findings](E15-20261121-simulation-ip-alias-discovery.md): all `.10–.15` device IPs live on simulation `eth0` as secondary addresses.
+- E16 — [Six TCP port 502 listener findings](E16-20261121-modbus-tcp-listeners.md), each bound to a configured device alias. Screenshot `E16-20261121-modbus-tcp-listeners.png` pending upload. Live Modbus communications are not yet verified.
 - Additional evidence only when associated tests are actually performed.
 
 ## Publication rules
