@@ -2,7 +2,7 @@
 
 **Observation date:** November 21, 2026  
 **Source:** Screenshot supplied by project owner of Windows PowerShell output from Docker inspection of the isolated GRFICSv3 lab. The same command was executed twice with matching results.  
-**Evidence image:** Original PNG shown in conversation, **not yet uploaded to GitHub**.
+**Evidence image:** Original screenshot [uploaded and verified in GitHub](E13-20261121-plc-network-membership.png).
 
 ## Read-only command and observed output
 
@@ -28,4 +28,4 @@ Check the `simulation` container's reported Docker network memberships and addre
 
 ## Screenshot still to publish
 
-`E13-20261121-plc-network-membership.png` — attach the PowerShell screenshot, excluding any sensitive host details.
+[E13-20261121-plc-network-membership.png](E13-20261121-plc-network-membership.png) — PowerShell screenshot uploaded to this evidence folder.
