@@ -3,7 +3,7 @@
 **Observation date:** November 21, 2026  
 **Source:** Screenshot supplied during the isolated GRFICSv3 lab from OpenPLC **Edit slave device** for Tank.  
 **Method:** Read-only review; no configuration changes reported.  
-**Screenshot status:** Original PNG has not yet been uploaded to GitHub.
+**Screenshot status:** [Tank image uploaded and verified in GitHub](E11-20261121-tank-modbus-config.png).
 
 ## Observed configuration
 
@@ -44,4 +44,4 @@ Each entry is a separately configured network endpoint. No success/failure deter
 
 ## Screenshot to upload
 
-`E11-20261121-tank-modbus-config.png` — save and upload the original lab screenshot to the same evidence folder, then link it to this report.
+`E11-20261121-tank-modbus-config.png` — [Original screenshot available here](E11-20261121-tank-modbus-config.png).
