@@ -3,7 +3,7 @@
 **Observation date:** November 21, 2026
 **Source:** Screenshot from the OpenPLC **Edit slave device** screen for **Feed 2**, supplied during the isolated GRFICSv3 lab.
 **Method:** Read-only inspection; no changes or saves reported.
-**Image status:** PNG screenshot not yet uploaded to GitHub; this entry records the values visible in the conversation.
+**Image status:** [Feed 2 screenshot uploaded and verified](E08-20261121-feed2-modbus-config.png).
 
 ## Configured endpoint
 
@@ -44,4 +44,4 @@ Two separate IP endpoints are configured. Sharing Modbus Unit ID 247 at differen
 
 Capture the remaining device configuration screens (Purge, Product, Tank, Analyzer) read-only to complete the endpoint inventory; then use controlled read-only communication tests to verify expected paths.
 
-**Screenshot to publish:** `E08-20261121-feed2-modbus-config.png`, uploaded beside this report. Do not disclose credentials.
+**Screenshot:** [E08-20261121-feed2-modbus-config.png](E08-20261121-feed2-modbus-config.png), published beside this report. Do not disclose credentials.
