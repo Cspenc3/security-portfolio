@@ -37,6 +37,10 @@ Record HTTP status codes; redirects (301/302) mean the web server responded, not
 
 **Interpretation:** Note which values changed and by how much; if nothing changes, record "no change observed during interval." A further source-of-truth check is needed before asserting the PLC and simulation exchange data.
 
+## Completed configuration inventory
+
+The [six-device Modbus TCP endpoint inventory](modbus-endpoint-inventory.md) documents Feed 1, Feed 2, Purge, Product, Tank and Analyzer network destinations, Unit IDs and assigned input/output word ranges from OpenPLC. These are configured destinations; **actual Modbus packet exchange remains to be tested**.
+
 ## Further Phase 1 verification (not yet complete)
 1. Record the PLC management screen and runtime status.
 2. Inspect HMI configured data source and intended controller address **read-only**.
