@@ -1,6 +1,6 @@
 # Phase 1 — Configured Modbus TCP device endpoint inventory
 
-**Scope:** Read-only findings from the **six** configured slave devices in the GRFICSv3 OpenPLC interface. The table records **configuration**, not proof of active Modbus communications. All values were observed on individual device pages and corroborated against the Slave Devices summary for OpenPLC I/O allocation.
+**Scope:** Read-only findings from the **six** configured slave devices in the GRFICSv3 OpenPLC interface. Screenshots E07–E12 are now uploaded alongside their individual analyses. The table records **configuration**, not proof of active Modbus communications. All values were observed on individual device pages and corroborated against the Slave Devices summary for OpenPLC I/O allocation.
 
 | Device | Configured destination | Unit ID | Input registers: start / qty | Write holding: start / qty | OpenPLC input words (summary) | OpenPLC output word (summary) | Evidence |
 |---|---|---:|---|---|---|---|---|
