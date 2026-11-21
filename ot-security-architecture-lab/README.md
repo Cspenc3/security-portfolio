@@ -20,7 +20,7 @@ Your engineering task is to **establish normal operation, understand how compone
 |---|---|---|
 | **OT / ICS security engineering** | [Plant baseline and HMI investigation](01-baseline/README.md) · [Architecture & trust boundaries](02-architecture/README.md) | Baseline partly observed; architecture work ahead |
 | **SOC analyst / incident response** | **[SOC investigation & detection](05-detection-response/README.md)** | A prior DNS investigation is documented; *chemical-plant detection* is planned |
-| **Network / security engineering** | [Network inventory](01-baseline/network-inventory.csv) · [Industrial traffic analysis](03-protocol-analysis/README.md) | Network memberships observed; protocol capture pending |
+| **Network / security engineering** | [Verified configuration inventory: six Modbus endpoints](01-baseline/modbus-endpoint-inventory.md) · [Network inventory](01-baseline/network-inventory.csv) · [Industrial traffic analysis](03-protocol-analysis/README.md) | Network memberships observed; protocol capture pending |
 | **Risk / project management** | [Charter](00-governance/project-charter.md) · [Risk register](00-governance/risk-register.csv) · [Decision log](00-governance/decision-log.md) | Living project documents published |
 | **Certification-aligned practical tests** | [GICSP, GRID & PMI-RMP objective-to-evidence map](00-governance/objectives-traceability.md) | Select objectives mapped; completion tracked honestly |
 
